@@ -16,3 +16,5 @@ const  msj = activo && 'Activo';
 console.log(msj)
 
 
+//https://developer.mozilla.org/es/
+

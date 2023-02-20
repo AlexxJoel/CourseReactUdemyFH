@@ -1,18 +1,23 @@
 // import {heroes} from "./data/heroes"; solo export
 // import heroes from "./data/heroes"; //export default
-import heroes, {owner} from "./data/heroes";
+import heroes, {owner} from "./../data/heroes";
 
-console.log(owner)
+// console.log(owner)
 
 
 const getHeroesBYId = (id)=>{
     return heroes.find( heroe => heroe.id=== id )
 }
-
-console.log(getHeroesBYId(2))
+//
+// console.log(getHeroesBYId(2))
 
 const getHeroesBYOwner = (owner)=>{
     return heroes.filter( heroe => heroe.owner=== owner )
 }
 
-console.log(getHeroesBYOwner("DC"))
+// console.log(getHeroesBYOwner("DC"))
+
+export {
+    getHeroesBYId,
+    getHeroesBYOwner
+}
